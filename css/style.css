@@ -1,3 +1,96 @@
+/*---- COLORS ----*/
+/*---- MIXINS ----*/
+/*---- REUSABLE COMPONENTS ----*/
+.underline {
+  height: 3px;
+  width: 20%;
+  background-color: #ed145b;
+  margin: 20px auto; }
 
+/*.line {
+    width: 100vw;
+    height: 0;
+    border-left: 100vw solid $highlight;
+    border-bottom: 30px solid transparent;
+}*/
+/*---- HEADINGS ----*/
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 46px;
+  color: #fff; }
+
+h5 {
+  font-weight: 300;
+  font-size: 22px; }
+
+/*---- BUTTONS ----*/
+.btn {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ed145b;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.3s ease-in;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: scale(1.1); }
+
+/*---- GENERAL ----*/
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+/*---- NAV ----*/
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/jumbotron_1.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .container .nav ul {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 10%;
+    padding: 0;
+    list-style-type: none; }
+    .container .nav ul li {
+      padding-right: 15px; }
+      .container .nav ul li a {
+        text-decoration: none;
+        color: #fff; }
+        .container .nav ul li a:hover {
+          color: #ed145b; }
+    .container .nav ul .logo {
+      margin-right: auto;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 26px;
+      color: #fff; }
+      .container .nav ul .logo span {
+        color: #ed145b; }
+  .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%; }
+    .container .content h1 span {
+      font-weight: 900; }
+    .container .content h5 {
+      color: #fff; }
+      .container .content h5:last-of-type {
+        margin-bottom: 65px; }
+
+/*---- LAPTOP ----*/
 
 /*# sourceMappingURL=style.css.map */

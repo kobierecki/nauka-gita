@@ -1,3 +1,124 @@
+
+/*---- COLORS ----*/
+
+$bright-font: #fff;
+$dark-font: #000;
+$highlight: #ed145b;
+$footer-background: #2b2b2b;
+
+/*---- MIXINS ----*/
+
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin square-size($dimension) {
+    height: $dimension;
+    width: $dimension;
+}
+
+/*---- REUSABLE COMPONENTS ----*/
+
+.underline {
+    @include size(3px, 20%);
+    background-color: $highlight;
+    margin: 20px auto;
+}
+
+/*.line {
+    width: 100vw;
+    height: 0;
+    border-left: 100vw solid $highlight;
+    border-bottom: 30px solid transparent;
+}*/
+
+/*---- HEADINGS ----*/
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 46px;
+    color: $bright-font;  
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+/*---- BUTTONS ----*/
+
+.btn {
+    @include size(50px, 200px);
+    border: none;
+    border-radius: 25px;
+    background-color: $highlight;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color: $bright-font; 
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.btn:hover {transform: scale(1.1)}
+
+/*---- GENERAL ----*/
+
 * {
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
+
+/*---- NAV ----*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/jumbotron_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .nav {
+        ul {
+            height: 100px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 10%;
+            padding: 0;
+            list-style-type: none;
+            li {
+                padding-right: 15px;
+                a {text-decoration: none;
+                    color: $bright-font;
+                    &:hover {color: $highlight;}
+                }
+            }
+            .logo {
+                margin-right: auto;
+                span {color: $highlight;}
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: 26px;
+                color: $bright-font;
+            }   
+        } 
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include square-size(100%);
+        h1 span {font-weight: 900;}
+        h5 {
+            color: $bright-font;
+            &:last-of-type {margin-bottom: 65px;}
+        }
+    }
+}
+
+/*---- LAPTOP ----*/
+
