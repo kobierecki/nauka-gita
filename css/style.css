@@ -1,28 +1,44 @@
+@charset "UTF-8";
 /*---- COLORS ----*/
 /*---- MIXINS ----*/
 /*---- REUSABLE COMPONENTS ----*/
 .underline {
-  height: 3px;
+  height: 2px;
   width: 20%;
   background-color: #ed145b;
   margin: 20px auto; }
 
-/*.line {
-    width: 100vw;
-    height: 0;
-    border-left: 100vw solid $highlight;
-    border-bottom: 30px solid transparent;
-}*/
+.line {
+  max-width: 100vw;
+  height: 0;
+  border-left: 98vw solid #ed145b;
+  border-bottom: 30px solid #f4f4f4; }
+
+/* wywo┼éuje scrolla! */
 /*---- HEADINGS ----*/
 h1 {
   text-transform: uppercase;
-  font-weight: 300;
   font-size: 46px;
   color: #fff; }
 
-h5 {
-  font-weight: 300;
+h2 {
+  font-style: italic;
+  font-size: 38px;
+  color: #5a5a5a; }
+
+h3 {
   font-size: 22px; }
+
+h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ed145b; }
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #5a5a5a; }
 
 /*---- BUTTONS ----*/
 .btn {
@@ -43,17 +59,18 @@ h5 {
 
 /*---- GENERAL ----*/
 * {
-  margin: 0;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0; }
 
 /*---- NAV ----*/
-.container {
+.container-jumbotron {
   width: 100%;
   height: 100%;
   background-image: url("img/jumbotron_1.png");
   background-size: cover;
   background-repeat: no-repeat; }
-  .container .nav ul {
+  .container-jumbotron .nav ul {
     height: 100px;
     display: flex;
     justify-content: flex-end;
@@ -61,22 +78,22 @@ h5 {
     margin: 0 10%;
     padding: 0;
     list-style-type: none; }
-    .container .nav ul li {
+    .container-jumbotron .nav ul li {
       padding-right: 15px; }
-      .container .nav ul li a {
+      .container-jumbotron .nav ul li a {
         text-decoration: none;
         color: #fff; }
-        .container .nav ul li a:hover {
+        .container-jumbotron .nav ul li a:hover {
           color: #ed145b; }
-    .container .nav ul .logo {
+    .container-jumbotron .nav ul .logo {
       margin-right: auto;
       font-family: 'Roboto';
       font-weight: 700;
       font-size: 26px;
       color: #fff; }
-      .container .nav ul .logo span {
+      .container-jumbotron .nav ul .logo span {
         color: #ed145b; }
-  .container .content {
+  .container-jumbotron .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,13 +101,44 @@ h5 {
     text-align: center;
     height: 100%;
     width: 100%; }
-    .container .content h1 span {
+    .container-jumbotron .content h1 span {
       font-weight: 900; }
-    .container .content h5 {
+    .container-jumbotron .content h3 {
       color: #fff; }
-      .container .content h5:last-of-type {
+      .container-jumbotron .content h3:last-of-type {
         margin-bottom: 65px; }
 
-/*---- LAPTOP ----*/
+/*---- SHOWCASE ----*/
+.container-showcase {
+  height: 70vh;
+  padding: 5% 0 5% 15%;
+  display: flex;
+  background-color: #f4f4f4; }
+  .container-showcase .column {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    flex-grow: 6;
+    flex-shrink: 6;
+    flex-basis: 0; }
+    .container-showcase .column:first-of-type {
+      flex-grow: 3;
+      flex-shrink: 3;
+      flex-basis: 0; }
+    .container-showcase .column .underline {
+      margin-left: 0;
+      width: 50%; }
+    .container-showcase .column h6 {
+      margin-top: 15px;
+      line-height: 30px;
+      display: flex;
+      align-content: center; }
+      .container-showcase .column h6 img {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px; }
+    .container-showcase .column .laptop-wrapper img {
+      position: absolute;
+      max-height: 500px; }
 
 /*# sourceMappingURL=style.css.map */
