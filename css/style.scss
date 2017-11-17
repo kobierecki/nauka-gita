@@ -5,6 +5,7 @@ $bright-font: #fff;
 $dark-font: #000;
 $font-color: #5a5a5a;
 $highlight: #ed145b;
+$section-background: #f4f4f4;
 $footer-background: #2b2b2b;
 
 /*---- MIXINS ----*/
@@ -201,7 +202,7 @@ p {
 .container-showcase {
     position: relative;
     padding: 5% 0 5% 15%;
-    background-color: #f4f4f4;
+    background-color: $section-background;
     .showcase-description {
         .underline {
             margin-left: 0;
@@ -247,28 +248,71 @@ p {
     background-image: url("img/jumbotron_1.png");
     background-size: cover;
     .carousel-indicators li { visibility: hidden; }
+    .testimonial {  
+        p {
+            color: $bright-font;
+            font-style: italic;
+            font-size: 25px;
+        }
+        span {
+            font-family: 'Lato';
+            color: $highlight;
+            font-weight: 900;
+            font-size: 100px;
+        }
+        .reverse {
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    }
 }
-.carousel-inner{
+
+/*---- PRICES ----*/
+
+.container-prices {
+    padding: 10%;
+    background-color: $section-background;
+    .prices-description {padding: 0% 20% 7%;}
+    .prices-plan-top {
+        @include size (150px, 250px);
+        position: relative;
+        background-color: #5a5a5a;
+        &:hover {
+            background-color: $highlight;
+        }
+    
+        p {
+            color: #fff;
+            &:first-of-type {
+                font-weight: 700;
+                font-size: 50px;
+                padding-top: 50px;
+                margin: 0;
+            span {font-size: 20px;}
+            }
+        }
+        button {
+            position: absolute;
+            left: 25px;
+            bottom: -25px;
+            background-color: $section-background;
+            color: #5a5a5a;
+        }   
+    }
+    
+    .prices-plan-bottom {
+        @include size (315px, 250px);
+        background-color: #fff;
+        ul {
+            padding: 65px 0 0 0;
+            line-height: 30px;
+            list-style-type: none;
+        }
+        button {margin-top: 30px;}
+    }
     
 }
-.testimonial {
-    
-    p {
-        color: $bright-font;
-        font-style: italic;
-        font-size: 25px;
-    }
-    span {
-        font-family: 'Lato';
-        color: $highlight;
-        font-weight: 900;
-        font-size: 100px;
-    }
-    .reverse {
-        display: inline-block;
-        transform: rotate(180deg);
-    }
-}
+
 
 
 

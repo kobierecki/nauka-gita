@@ -244,18 +244,56 @@ p {
   background-size: cover; }
   .carousel .carousel-indicators li {
     visibility: hidden; }
+  .carousel .testimonial p {
+    color: #fff;
+    font-style: italic;
+    font-size: 25px; }
+  .carousel .testimonial span {
+    font-family: 'Lato';
+    color: #ed145b;
+    font-weight: 900;
+    font-size: 100px; }
+  .carousel .testimonial .reverse {
+    display: inline-block;
+    transform: rotate(180deg); }
 
-.testimonial p {
-  color: #fff;
-  font-style: italic;
-  font-size: 25px; }
-.testimonial span {
-  font-family: 'Lato';
-  color: #ed145b;
-  font-weight: 900;
-  font-size: 100px; }
-.testimonial .reverse {
-  display: inline-block;
-  transform: rotate(180deg); }
+/*---- PRICES ----*/
+.container-prices {
+  padding: 10%;
+  background-color: #f4f4f4; }
+  .container-prices .prices-description {
+    padding: 0% 20% 7%; }
+  .container-prices .prices-plan-top {
+    height: 150px;
+    width: 250px;
+    position: relative;
+    background-color: #5a5a5a; }
+    .container-prices .prices-plan-top:hover {
+      background-color: #ed145b; }
+    .container-prices .prices-plan-top p {
+      color: #fff; }
+      .container-prices .prices-plan-top p:first-of-type {
+        font-weight: 700;
+        font-size: 50px;
+        padding-top: 50px;
+        margin: 0; }
+        .container-prices .prices-plan-top p:first-of-type span {
+          font-size: 20px; }
+    .container-prices .prices-plan-top button {
+      position: absolute;
+      left: 25px;
+      bottom: -25px;
+      background-color: #f4f4f4;
+      color: #5a5a5a; }
+  .container-prices .prices-plan-bottom {
+    height: 315px;
+    width: 250px;
+    background-color: #fff; }
+    .container-prices .prices-plan-bottom ul {
+      padding: 65px 0 0 0;
+      line-height: 30px;
+      list-style-type: none; }
+    .container-prices .prices-plan-bottom button {
+      margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
