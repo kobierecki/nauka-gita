@@ -259,7 +259,7 @@ p {
 
 /*---- PRICES ----*/
 .container-prices {
-  padding: 10%;
+  padding: 5% 10%;
   background-color: #f4f4f4; }
   .container-prices .prices-description {
     padding: 0% 20% 7%; }
@@ -319,5 +319,98 @@ p {
       color: #ed145b; }
 
 /*---- GALLERY ----*/
+.container-gallery {
+  padding: 30px 10%;
+  background-color: #fff; }
+  .container-gallery .gallery-description {
+    padding: 5% 25%; }
+  .container-gallery .gallery-img {
+    padding: 0;
+    position: relative;
+    margin: 10px 10px 150px;
+    height: 250px;
+    width: 350px; }
+    .container-gallery .gallery-img:hover .layer-gallery {
+      opacity: 1; }
+    .container-gallery .gallery-img .layer-gallery {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(237, 20, 91, 0.6);
+      transition: .4s; }
+      .container-gallery .gallery-img .layer-gallery .layer-relative {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0; }
+        .container-gallery .gallery-img .layer-gallery .layer-relative i {
+          margin: 10px;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 5px;
+          color: #f4f4f4;
+          font-size: 30px; }
+    .container-gallery .gallery-img img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+    .container-gallery .gallery-img .gallery-bottom {
+      padding: 20px 20px 0;
+      height: 140px;
+      background-color: #f4f4f4; }
+      .container-gallery .gallery-img .gallery-bottom h6 {
+        padding-bottom: 15px;
+        margin: 0;
+        color: #5a5a5a; }
+  .container-gallery .show-more-button {
+    padding: 5% 5% 0; }
+    .container-gallery .show-more-button a {
+      text-decoration: none; }
+      .container-gallery .show-more-button a h6 {
+        margin: 0; }
+      .container-gallery .show-more-button a i {
+        font-size: 20px;
+        color: #ed145b; }
+
+/*---- MACHE-MORE ----*/
+.mache-jumbotron {
+  height: 50vh;
+  width: 100%; }
+  .mache-jumbotron .mache-description {
+    padding: 60px 20%; }
+    .mache-jumbotron .mache-description h2, .mache-jumbotron .mache-description p {
+      color: #f4f4f4; }
+    .mache-jumbotron .mache-description p {
+      padding-bottom: 30px; }
+
+/*---- DOWNLOAD ----*/
+.container-download {
+  padding: 10%; }
+  .container-download img {
+    max-height: 400px;
+    height: 100%;
+    width: 100%; }
+  .container-download .underline {
+    width: 200px;
+    margin-left: 0; }
+
+/*---- FOOTER ----*/
+.container-footer {
+  height: 100px;
+  background-color: #2b2b2b; }
+  .container-footer h6 {
+    margin: 0;
+    padding-top: 30px;
+    color: #f4f4f4; }
+    .container-footer h6 .dot {
+      font-weight: 700;
+      color: #ed145b; }
+    .container-footer h6 .company {
+      font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

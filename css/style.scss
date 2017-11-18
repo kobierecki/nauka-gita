@@ -270,7 +270,7 @@ p {
 /*---- PRICES ----*/
 
 .container-prices {
-    padding: 10%;
+    padding: 5% 10%;
     background-color: $section-background;
     .prices-description {padding: 0% 20% 7%;}
     .prices-plan-top {
@@ -339,5 +339,112 @@ p {
 }
  
 /*---- GALLERY ----*/
+
+.container-gallery {
+    padding: 30px 10%;
+    background-color: #fff;
+    .gallery-description {padding: 5% 25%;}
+    .gallery-img {
+        padding: 0;
+        position: relative;
+        margin: 10px 10px 150px;
+        @include size(250px, 350px);
+        &:hover .layer-gallery {opacity: 1;}
+        .layer-gallery {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0; 
+            z-index: 1;
+            background-color: rgba(237,20,91,0.6);
+            transition: .4s;
+            .layer-relative {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                i {
+                    margin: 10px;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: $section-background;
+                    font-size: 30px;
+                }   
+            }
+        }
+        img {
+            object-fit: cover;
+            @include size(100%, 100%);
+        }
+        .gallery-bottom {
+            padding: 20px 20px 0;
+            height: 140px;
+            background-color: $section-background;
+            h6 {
+                padding-bottom: 15px;
+                margin: 0;
+                color: $font-color;
+            }
+        }       
+    }
+    .show-more-button {
+        padding: 5% 5% 0;
+        a {  
+            text-decoration: none;
+            h6 {margin: 0;}
+            i {
+                font-size: 20px;
+                color: $highlight;
+            }
+        }
+    }
+}
+
+/*---- MACHE-MORE ----*/
+
+.mache-jumbotron {
+    @include size(50vh, 100%);
+    .mache-description {
+        padding: 60px 20%;
+        h2, p {color: $section-background;}
+        p {padding-bottom: 30px;}
+    }
+}
+
+/*---- DOWNLOAD ----*/
+
+.container-download {
+    padding: 10%;
+    img {
+        max-height: 400px;
+        @include size(100%,100% );
+    }
+    .underline {
+        width: 200px;
+        margin-left: 0;
+    }
+}
+
+/*---- FOOTER ----*/
+
+.container-footer {
+    height: 100px;
+    background-color: $footer-background;
+    h6 {
+        margin: 0;
+        padding-top: 30px;
+        color: $section-background;
+        .dot {
+            font-weight: 700;
+            color: $highlight;
+        }
+        .company {font-weight: 700;}
+    }
+}
+
 
 
