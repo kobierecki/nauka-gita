@@ -37,8 +37,8 @@ h6 {
 
 p {
   font-size: 15px;
-  line-height: 24px;
-  color: #5a5a5a; }
+  color: #5a5a5a;
+  line-height: 24px; }
 
 /*---- BUTTONS ----*/
 .btn {
@@ -159,8 +159,8 @@ p {
 
 /*---- NAV ----*/
 .container-jumbotron {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-image: url("img/jumbotron_1.png");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -245,14 +245,14 @@ p {
   .carousel .carousel-indicators li {
     visibility: hidden; }
   .carousel .testimonial p {
+    font-size: 25px;
     color: #fff;
-    font-style: italic;
-    font-size: 25px; }
+    font-style: italic; }
   .carousel .testimonial span {
-    font-family: 'Lato';
+    font-size: 100px;
     color: #ed145b;
-    font-weight: 900;
-    font-size: 100px; }
+    font-family: 'Lato';
+    font-weight: 900; }
   .carousel .testimonial .reverse {
     display: inline-block;
     transform: rotate(180deg); }
@@ -353,8 +353,8 @@ p {
           cursor: pointer;
           padding: 5px;
           border-radius: 5px;
-          color: #f4f4f4;
-          font-size: 30px; }
+          font-size: 30px;
+          color: #f4f4f4; }
     .container-gallery .gallery-img img {
       object-fit: cover;
       height: 100%;
