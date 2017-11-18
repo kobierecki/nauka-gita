@@ -296,4 +296,28 @@ p {
     .container-prices .prices-plan-bottom button {
       margin-top: 30px; }
 
+/*---- ADVANTAGES ----*/
+.container-advantages {
+  padding: 10%; }
+  .container-advantages img {
+    padding: 60px 15px;
+    float: left; }
+
+/*---- JOIN ----*/
+.container-join {
+  padding: 50px 10%;
+  background-color: #ed145b; }
+  .container-join h1 {
+    font-weight: 300;
+    font-size: 36px;
+    color: #f4f4f4; }
+    .container-join h1 span {
+      font-weight: 700; }
+    .container-join h1 button {
+      margin-left: 25px;
+      background-color: #f4f4f4;
+      color: #ed145b; }
+
+/*---- GALLERY ----*/
+
 /*# sourceMappingURL=style.css.map */

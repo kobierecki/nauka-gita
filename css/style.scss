@@ -279,8 +279,7 @@ p {
         background-color: #5a5a5a;
         &:hover {
             background-color: $highlight;
-        }
-    
+        }   
         p {
             color: #fff;
             &:first-of-type {
@@ -298,8 +297,7 @@ p {
             background-color: $section-background;
             color: #5a5a5a;
         }   
-    }
-    
+    }   
     .prices-plan-bottom {
         @include size (315px, 250px);
         background-color: #fff;
@@ -310,12 +308,36 @@ p {
         }
         button {margin-top: 30px;}
     }
-    
 }
 
+/*---- ADVANTAGES ----*/
 
+.container-advantages {
+    padding: 10%;
+    img {
+        padding: 60px 15px;
+        float: left;
+    }  
+}
 
+/*---- JOIN ----*/
 
+.container-join {
+    padding: 50px 10%;
+    background-color: $highlight;
+    h1 {
+        font-weight: 300;
+        font-size: 36px;
+        color: $section-background;
+        span {font-weight: 700;}
+        button {
+            margin-left: 25px;
+            background-color: $section-background;
+            color: $highlight;
+        }
+    }
+}
  
+/*---- GALLERY ----*/
 
 
