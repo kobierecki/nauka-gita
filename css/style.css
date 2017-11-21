@@ -7,6 +7,9 @@
   width: 20%;
   background-color: #ed145b;
   margin: 20px auto; }
+  @media (max-width: 760px) {
+    .underline {
+      margin: 10px auto; } }
 
 .line {
   max-width: 100vw;
@@ -20,6 +23,9 @@ h1 {
   text-transform: uppercase;
   font-size: 46px;
   color: #fff; }
+  @media (max-width: 760px) {
+    h1 {
+      font-size: 32px; } }
 
 h2 {
   font-style: italic;
@@ -28,6 +34,9 @@ h2 {
 
 h3 {
   font-size: 22px; }
+  @media (max-width: 760px) {
+    h3 {
+      font-size: 18px; } }
 
 h6 {
   font-weight: 400;
@@ -37,8 +46,8 @@ h6 {
 
 p {
   font-size: 15px;
-  line-height: 24px;
-  color: #5a5a5a; }
+  color: #5a5a5a;
+  line-height: 24px; }
 
 /*---- BUTTONS ----*/
 .btn {
@@ -56,6 +65,12 @@ p {
 
 .btn:hover {
   transform: scale(1.1); }
+
+@media (max-width: 760px) {
+  .btn-small {
+    height: 40px;
+    width: 145px;
+    font-size: 13px; } }
 
 /* ---- GRID ---- */
 * {
@@ -159,26 +174,29 @@ p {
 
 /*---- NAV ----*/
 .container-jumbotron {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-image: url("img/jumbotron_1.png");
   background-size: cover;
   background-repeat: no-repeat; }
   .container-jumbotron .nav ul {
-    height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0 10%;
-    padding: 0;
+    padding: 20px 0 0 0;
     list-style-type: none; }
     .container-jumbotron .nav ul li {
-      padding-right: 15px; }
+      padding-right: 15px;
+      font-size: 18px; }
       .container-jumbotron .nav ul li a {
         text-decoration: none;
         color: #fff; }
         .container-jumbotron .nav ul li a:hover {
           color: #ed145b; }
+      @media (max-width: 760px) {
+        .container-jumbotron .nav ul li {
+          padding: 5px; } }
     .container-jumbotron .nav ul .logo {
       margin-right: auto;
       font-family: 'Roboto';
@@ -187,20 +205,28 @@ p {
       color: #fff; }
       .container-jumbotron .nav ul .logo span {
         color: #ed145b; }
+      @media (max-width: 760px) {
+        .container-jumbotron .nav ul .logo {
+          margin: 0 auto; } }
+    @media (max-width: 760px) {
+      .container-jumbotron .nav ul {
+        flex-direction: column; } }
   .container-jumbotron .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
-    width: 100%; }
+    padding: 200px 5% 0 5%; }
     .container-jumbotron .content h1 span {
       font-weight: 900; }
     .container-jumbotron .content h3 {
       color: #fff; }
       .container-jumbotron .content h3:last-of-type {
         margin-bottom: 65px; }
+    @media (max-width: 760px) {
+      .container-jumbotron .content {
+        padding-top: 30px; } }
 
 /*---- SHOWCASE ----*/
 .container-showcase {
@@ -245,14 +271,14 @@ p {
   .carousel .carousel-indicators li {
     visibility: hidden; }
   .carousel .testimonial p {
+    font-size: 25px;
     color: #fff;
-    font-style: italic;
-    font-size: 25px; }
+    font-style: italic; }
   .carousel .testimonial span {
-    font-family: 'Lato';
+    font-size: 100px;
     color: #ed145b;
-    font-weight: 900;
-    font-size: 100px; }
+    font-family: 'Lato';
+    font-weight: 900; }
   .carousel .testimonial .reverse {
     display: inline-block;
     transform: rotate(180deg); }
@@ -353,8 +379,8 @@ p {
           cursor: pointer;
           padding: 5px;
           border-radius: 5px;
-          color: #f4f4f4;
-          font-size: 30px; }
+          font-size: 30px;
+          color: #f4f4f4; }
     .container-gallery .gallery-img img {
       object-fit: cover;
       height: 100%;
